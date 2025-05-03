@@ -1,4 +1,4 @@
-# babel-plugin-transform-ternary-to-if-else
+# babel-plugin-transform-ternary
 
 [![Build Status](https://travis-ci.org/OpenGG/babel-plugin-transform-ternary-to-if-else.svg?branch=master)](https://travis-ci.org/OpenGG/babel-plugin-transform-ternary-to-if-else)
 [![Coverage Status](https://coveralls.io/repos/github/OpenGG/babel-plugin-transform-ternary-to-if-else/badge.svg?branch=master)](https://coveralls.io/github/OpenGG/babel-plugin-transform-ternary-to-if-else?branch=master)
@@ -31,7 +31,7 @@ const val = function() {
 ## Installation
 
 ```sh
-npm install babel-plugin-transform-ternary-to-if-else
+npm install babel-plugin-transform-ternary
 ```
 
 ## Usage
@@ -42,20 +42,20 @@ npm install babel-plugin-transform-ternary-to-if-else
 
 ```json
 {
-  "plugins": ["transform-ternary-to-if-else"]
+  "plugins": ["transform-ternary"]
 }
 ```
 
 ### Via CLI
 
 ```sh
-babel --plugins transform-ternary-to-if-else script.js
+babel --plugins transform-ternary script.js
 ```
 
 ### Via Node API
 
 ```javascript
 require("babel-core").transform("code", {
-  plugins: ["transform-ternary-to-if-else"]
+  plugins: ["transform-ternary"]
 });
 ```
