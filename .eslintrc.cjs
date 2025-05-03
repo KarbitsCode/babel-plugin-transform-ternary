@@ -6,5 +6,10 @@ module.exports = {
   parserOptions: {
     ecmaVersion: 'latest',
   },
+  rules: {
+    'linebreak-style': 'warn',
+    'import/no-unresolved': 'warn',
+    'import/extensions': 'warn',
+  },
   extends: 'opengg',
 };

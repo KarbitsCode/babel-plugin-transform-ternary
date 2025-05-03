@@ -2,15 +2,15 @@ import {
   expect,
 } from 'chai';
 
-import Path from './lib/rel-path';
+import Path from './lib/rel-path.js';
 
-import readCases from './lib/read-cases';
+import readCases from './lib/read-cases.js';
 
-import transform from './lib/transform-file';
+import transform from './lib/transform-file.js';
 
-import readFile from './lib/read-file';
+import readFile from './lib/read-file.js';
 
-import safeEval from './lib/safe-eval';
+import safeEval from './lib/safe-eval.js';
 
 const relPath = Path(import.meta.url);
 
@@ -26,8 +26,8 @@ cases.forEach(
     async () => {
       const [transformed, compare] = await Promise.all([
         transform(
-          relPath(`cases/${name}/input.js`).pathname, {
-            extends: babelrc.pathname,
+          relPath(`cases/${name}/input.js`).pathname.substring(3), {
+            extends: babelrc.pathname.substring(1),
           }
         ),
         readFile(

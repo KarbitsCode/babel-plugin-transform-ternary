@@ -51,4 +51,4 @@ const main = () => {
   return 'finished';
 };
 
-main()
+main();
