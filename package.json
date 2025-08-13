@@ -20,16 +20,16 @@
   "type": "module",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/OpenGG/babel-plugin-transform-ternary-to-if-else.git"
+    "url": "git+https://github.com/KarbitsCode/babel-plugin-transform-ternary.git"
   },
   "bugs": {
-    "url": "https://github.com/OpenGG/babel-plugin-ternary-to-if-else/issues"
+    "url": "https://github.com/KarbitsCode/babel-plugin-transform-ternary/issues"
   },
-  "homepage": "https://github.com/OpenGG/babel-plugin-ternary-to-if-else#readme",
+  "homepage": "https://github.com/KarbitsCode/babel-plugin-transform-ternary#readme",
   "keywords": [
     "babel-plugin"
   ],
-  "author": "OpenGG<liy099@gmail.com>",
+  "author": "KarbitsCode",
   "license": "GPL-3.0",
   "dependencies": {
     "@babel/template": "^7.16.7"
