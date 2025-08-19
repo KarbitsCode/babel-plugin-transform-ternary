@@ -1,6 +1,6 @@
 {
   "name": "babel-plugin-transform-ternary",
-  "version": "2.0.2",
+  "version": "2.0.3",
   "description": "Transform ternary expressions into if-else statements.",
   "main": "lib/index.js",
   "scripts": {
@@ -9,11 +9,12 @@
     "pretest": "npm run lint",
     "test": "npm run test:only -- --coverage",
     "test:only": "mocha --timeout 30000",
-    "prepublishOnly": "npm run test",
+    "prepublish": "npm run test",
     "build": "cd docs && npm install && npm run build",
     "prepare": "npm run build"
   },
   "files": [
+    "docs",
     "lib"
   ],
   "type": "module",

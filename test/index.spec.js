@@ -26,8 +26,8 @@ cases.forEach(
     async () => {
       const [transformed, compare] = await Promise.all([
         transform(
-          relPath(`cases/${name}/input.js`).pathname.substring(3), {
-            extends: babelrc.pathname.substring(1),
+          relPath(`cases/${name}/input.js`), {
+            extends: babelrc,
           }
         ),
         readFile(
