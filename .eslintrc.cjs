@@ -8,6 +8,7 @@ module.exports = {
   },
   rules: {
     'linebreak-style': 'warn',
+    'operator-linebreak': 'warn',
     'import/no-unresolved': 'warn',
     'import/extensions': 'warn',
   },
